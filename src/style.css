@@ -1,1 +1,10 @@
 @import 'tailwindcss';
+
+@font-face {
+  font-family: 'SkipStandard-Bold';
+  src: local('SkipStandard-Bold'), url('./assets/fonts/FOT-Skip Std B.otf');
+}
+
+* {
+  font-family: 'SkipStandard-Bold', sans-serif;
+}
