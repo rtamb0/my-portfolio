@@ -5,20 +5,51 @@ const menus = ref([
   { name: 'Home', link: '/' },
   { name: 'About', link: '/about' },
   { name: 'Projects', link: '/projects' },
-  { name: 'Contact', link: '/contact' },
+  { name: 'Contact Me', link: '/contact' },
 ])
 </script>
 
 <template>
-  <div class="p-4">
+  <div class="p-10">
     <ul class="flex flex-col gap-10">
       <li
         v-for="menu in menus"
-        class="w-16 h-16 rotate-45 text-center py-2 bg-gray-200"
         :key="menu.name"
+        class="h-16 w-16 rotate-45 button-color button-border"
       >
-        <a :href="menu.link" class="-rotate-60 mt-3 block">{{ menu.name }}</a>
+        <a :href="menu.link" class="flex h-full w-full items-center justify-center">
+          <span class="block whitespace-nowrap button-text text-white -rotate-55">
+            {{ menu.name }}
+          </span>
+        </a>
       </li>
     </ul>
   </div>
 </template>
+
+<style scoped>
+.button-text {
+  text-shadow:
+    rgb(102, 154, 237) 2px 0px 0px,
+    rgb(102, 154, 237) 1.75517px 0.958851px 0px,
+    rgb(102, 154, 237) 1.0806px 1.68294px 0px,
+    rgb(102, 154, 237) 0.141474px 1.99499px 0px,
+    rgb(102, 154, 237) -0.832294px 1.81859px 0px,
+    rgb(102, 154, 237) -1.60229px 1.19694px 0px,
+    rgb(102, 154, 237) -1.97998px 0.28224px 0px,
+    rgb(102, 154, 237) -1.87291px -0.701566px 0px,
+    rgb(102, 154, 237) -1.30729px -1.5136px 0px,
+    rgb(102, 154, 237) -0.421592px -1.95506px 0px,
+    rgb(102, 154, 237) 0.567324px -1.91785px 0px,
+    rgb(102, 154, 237) 1.41734px -1.41108px 0px,
+    rgb(102, 154, 237) 1.92034px -0.558831px 0px;
+}
+
+.button-border {
+  border: 8px solid #90adeb;
+}
+
+.button-color {
+  background-color: #466dcd;
+}
+</style>
