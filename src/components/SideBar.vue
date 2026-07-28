@@ -10,8 +10,8 @@ const menus = ref([
 </script>
 
 <template>
-  <div>
-    <ul id="button-wrapper" class="flex flex-col items-center p-10 gap-10">
+  <div class="p-15 pt-10">
+    <ul id="button-wrapper" class="flex flex-col items-center gap-10">
       <li
         v-for="menu in menus"
         :key="menu.name"
