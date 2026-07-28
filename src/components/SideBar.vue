@@ -10,8 +10,8 @@ const menus = ref([
 </script>
 
 <template>
-  <div class="p-10">
-    <ul class="flex flex-col gap-10">
+  <div>
+    <ul id="button-wrapper" class="flex flex-col items-center p-10 gap-10">
       <li
         v-for="menu in menus"
         :key="menu.name"
@@ -28,6 +28,15 @@ const menus = ref([
 </template>
 
 <style scoped>
+/* Mobile Devices (Smartphones up to 480px wide) */
+@media screen and (max-width: 768px) {
+  #button-wrapper {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
 .button-text {
   text-shadow:
     rgb(102, 154, 237) 2px 0px 0px,
