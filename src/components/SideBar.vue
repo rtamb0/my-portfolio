@@ -102,5 +102,7 @@ const menus = ref(menuStore.getMenuList)
 
 .button {
   transition: transform 0.2s ease-in-out;
+  -webkit-box-shadow: 5px 5px 15px -5px #000000;
+  box-shadow: 5px 5px 15px -5px #000000;
 }
 </style>
