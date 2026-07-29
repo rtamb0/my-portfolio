@@ -1,5 +1,6 @@
-import { computed } from 'vue'
+import { computed, ref, watch } from 'vue'
 import { defineStore } from 'pinia'
+import { useRouter } from 'vue-router'
 
 const menus = [
   {
@@ -26,11 +27,22 @@ const menus = [
 ]
 
 export const useMenuStore = defineStore('menu', () => {
-  const getCurrentMenu = computed(() => {
-    const currentPath = window.location.pathname
-    const currentMenu = menus.find((menu) => menu.link === currentPath)
-    return currentMenu || null
-  })
+  const getCurrentMenu = ref(null)
+
+  const router = useRouter()
+
+  watch(
+    () => router.currentRoute.value.path,
+    (newPath) => {
+      const currentMenu = menus.find((menu) => menu.link === newPath)
+      if (currentMenu) {
+        getCurrentMenu.value = currentMenu
+      } else {
+        getCurrentMenu.value = null
+      }
+    },
+    { immediate: true },
+  )
 
   const getMenuList = computed(() => {
     return menus
