@@ -1,12 +1,52 @@
 <script setup>
 import { useMenuStore } from '@/stores/menu'
 import { HomeIcon } from '@heroicons/vue/24/outline'
-import { computed } from 'vue'
+import { computed, nextTick, onMounted, ref, watch } from 'vue'
 
 const menuStore = useMenuStore()
 
 const currentMenu = computed(() => {
   return menuStore.getCurrentMenu
+})
+
+const thirdBannerText = ref(null)
+let resizeObserver = null
+
+const checkTextWrapping = () => {
+  // Resize the third banner height based on whether the text wraps or not
+
+  const el = thirdBannerText.value
+  if (!el || !el.parentElement) return
+
+  el.style.whiteSpace = 'nowrap'
+  const singleLineHeight = el.clientHeight
+
+  el.style.whiteSpace = ''
+  const currentHeight = el.clientHeight
+
+  if (currentHeight > singleLineHeight) {
+    el.parentElement.classList.remove('h-1/2')
+  } else {
+    el.parentElement.classList.add('h-1/2')
+  }
+}
+
+watch(
+  () => currentMenu.value?.description,
+  async () => {
+    await nextTick()
+    checkTextWrapping()
+  },
+)
+
+// Track browser window resizes in real-time
+onMounted(() => {
+  if (thirdBannerText.value) {
+    resizeObserver = new ResizeObserver(() => {
+      checkTextWrapping()
+    })
+    resizeObserver.observe(thirdBannerText.value)
+  }
 })
 </script>
 
@@ -45,8 +85,10 @@ const currentMenu = computed(() => {
     </div>
 
     <!-- Third section% -->
-    <div class="banner-3 h-1/2 relative z-10 flex min-w-0 flex-1 items-center pl-10">
-      <h2 class="text-white">{{ currentMenu?.description }}</h2>
+    <div
+      class="banner-3 banner-3-container h-1/2 relative z-10 flex min-w-0 flex-1 items-center pl-10"
+    >
+      <h2 ref="thirdBannerText" class="text-white">{{ currentMenu?.description }}</h2>
     </div>
   </div>
 </template>
