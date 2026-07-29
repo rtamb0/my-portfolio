@@ -8,3 +8,9 @@
 * {
   font-family: 'SkipStandard-Bold', sans-serif;
 }
+
+#app {
+  background-image: url('./assets/images/Fading_Sky-Sunset_04-1024x512.png');
+  background-size: cover;
+  background-position: center;
+}
