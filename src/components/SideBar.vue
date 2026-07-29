@@ -1,12 +1,9 @@
 <script setup>
+import { useMenuStore } from '@/stores/menu'
 import { ref } from 'vue'
 
-const menus = ref([
-  { name: 'Home', link: '/' },
-  { name: 'About', link: '/about' },
-  { name: 'Projects', link: '/projects' },
-  { name: 'Contact Me', link: '/contact' },
-])
+const menuStore = useMenuStore()
+const menus = ref(menuStore.getMenuList)
 </script>
 
 <template>
@@ -17,11 +14,11 @@ const menus = ref([
         :key="menu.name"
         class="h-16 w-16 rotate-45 button-color button-border"
       >
-        <a :href="menu.link" class="flex h-full w-full items-center justify-center">
+        <RouterLink :to="menu.link" class="flex h-full w-full items-center justify-center">
           <span class="block whitespace-nowrap button-text text-white -rotate-55">
             {{ menu.name }}
           </span>
-        </a>
+        </RouterLink>
       </li>
     </ul>
   </nav>
