@@ -1,5 +1,13 @@
 <script setup>
+import { useMenuStore } from '@/stores/menu'
 import { HomeIcon } from '@heroicons/vue/24/outline'
+import { computed } from 'vue'
+
+const menuStore = useMenuStore()
+
+const currentMenu = computed(() => {
+  return menuStore.getCurrentMenu
+})
 </script>
 
 <template>
@@ -22,7 +30,7 @@ import { HomeIcon } from '@heroicons/vue/24/outline'
 
     <!-- Second section -->
     <div class="banner-2 relative z-20 flex basis-[37%] shrink-0 items-center justify-center pl-10">
-      <h1 class="text-white text-xl">Home</h1>
+      <h1 class="text-white text-xl">{{ currentMenu?.name }}</h1>
     </div>
 
     <!-- Transition from banner 2 to banner 3 -->
@@ -38,7 +46,7 @@ import { HomeIcon } from '@heroicons/vue/24/outline'
 
     <!-- Third section% -->
     <div class="banner-3 h-1/2 relative z-10 flex min-w-0 flex-1 items-center pl-10">
-      <h2 class="text-white">About me.</h2>
+      <h2 class="text-white">{{ currentMenu?.description }}</h2>
     </div>
   </div>
 </template>
