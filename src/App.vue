@@ -6,7 +6,7 @@ import Topbar from './components/TopBar.vue'
 <template>
   <div id="app-layout" class="flex flex-col h-screen w-screen">
     <Topbar />
-    <div id="app-content">
+    <div id="app-content" class="flex flex-1">
       <Sidebar id="sidebar" />
       <RouterView />
     </div>
@@ -25,10 +25,7 @@ import Topbar from './components/TopBar.vue'
 /* Laptops and Desktops (Widths 769px and above) */
 @media screen and (min-width: 769px) {
   #sidebar {
-    width: 12.5%;
-  }
-  #app-content {
-    width: 87.5%;
+    width: 5%;
   }
 }
 </style>

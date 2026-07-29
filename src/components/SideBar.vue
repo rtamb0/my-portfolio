@@ -10,7 +10,7 @@ const menus = ref([
 </script>
 
 <template>
-  <div class="p-15 pt-10">
+  <div class="p-15 pt-10 button-wrapper">
     <ul id="button-wrapper" class="flex flex-col items-center gap-10">
       <li
         v-for="menu in menus"
@@ -60,5 +60,9 @@ const menus = ref([
 
 .button-color {
   background-color: #466dcd;
+}
+
+.button-wrapper {
+  background-color: rgba(84, 178, 242, 0.7);
 }
 </style>
