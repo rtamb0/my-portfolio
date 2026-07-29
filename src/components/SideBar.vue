@@ -92,7 +92,7 @@ const menus = ref(menuStore.getMenuList)
 }
 
 .button-wrapper {
-  background-color: rgba(84, 178, 242, 0.7);
+  background-color: #3d56c0;
 }
 
 .button:hover {
