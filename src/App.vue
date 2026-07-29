@@ -8,7 +8,7 @@ import Topbar from './components/TopBar.vue'
     <Topbar />
     <div id="app-content" class="flex flex-1">
       <Sidebar id="sidebar" />
-      <main>
+      <main class="flex-1">
         <RouterView />
       </main>
     </div>
