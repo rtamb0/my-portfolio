@@ -22,6 +22,11 @@ import Topbar from './components/TopBar.vue'
     flex-direction: column;
     max-width: 100%;
   }
+
+  #app-content {
+    flex-direction: column;
+    max-width: 100%;
+  }
 }
 
 /* Laptops and Desktops (Widths 769px and above) */
