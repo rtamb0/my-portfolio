@@ -22,7 +22,7 @@ import { HomeIcon } from '@heroicons/vue/24/outline'
 
     <!-- Second section -->
     <div class="banner-2 relative z-20 flex basis-[37%] shrink-0 items-center justify-center pl-10">
-      <h2 class="text-white text-xl">Home</h2>
+      <h1 class="text-white text-xl">Home</h1>
     </div>
 
     <!-- Transition from banner 2 to banner 3 -->
@@ -38,7 +38,7 @@ import { HomeIcon } from '@heroicons/vue/24/outline'
 
     <!-- Third section% -->
     <div class="banner-3 h-1/2 relative z-10 flex min-w-0 flex-1 items-center pl-10">
-      <div class="text-white">About me.</div>
+      <h2 class="text-white">About me.</h2>
     </div>
   </div>
 </template>

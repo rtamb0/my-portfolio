@@ -10,7 +10,7 @@ const menus = ref([
 </script>
 
 <template>
-  <div class="p-15 pt-10 button-wrapper">
+  <nav class="p-15 pt-10 button-wrapper">
     <ul id="button-wrapper" class="flex flex-col items-center gap-10">
       <li
         v-for="menu in menus"
@@ -24,7 +24,7 @@ const menus = ref([
         </a>
       </li>
     </ul>
-  </div>
+  </nav>
 </template>
 
 <style scoped>
