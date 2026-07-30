@@ -60,7 +60,7 @@
               </div>
 
               <!-- Name -->
-              <h1 class="whitespace-nowrap text-xl text-white">John Smith</h1>
+              <h1 class="whitespace-nowrap text-2xl text-white">John Smith</h1>
             </div>
 
             <!-- Main banner arrow -->
