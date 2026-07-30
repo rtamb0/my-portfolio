@@ -62,10 +62,6 @@ onMounted(() => {
       <div
         class="banner-1-end absolute left-0 top-0 h-0 w-0 border-b-32 border-l-32 border-t-32 border-b-transparent border-t-transparent"
       ></div>
-
-      <div
-        class="banner-2-start absolute left-0 top-0 h-0 w-0 border-b-32 border-l-32 border-t-32 border-l-transparent"
-      ></div>
     </div>
 
     <!-- Second section -->
@@ -77,10 +73,6 @@ onMounted(() => {
     <div class="relative z-20 w-0 shrink-0">
       <div
         class="banner-2-end absolute left-0 top-0 h-0 w-0 border-b-32 border-l-32 border-t-32 border-b-transparent border-t-transparent"
-      ></div>
-
-      <div
-        class="banner-3-start absolute left-0 top-0 h-0 w-0 border-b-32 border-l-32 border-t-32 border-l-transparent border-b-transparent"
       ></div>
     </div>
 
@@ -106,20 +98,11 @@ onMounted(() => {
   background-color: #99aeda;
 }
 
-.banner-2-start {
-  border-top-color: #99aeda;
-  border-bottom-color: #99aeda;
-}
-
 .banner-2-end {
   border-left-color: #99aeda;
 }
 
 .banner-3 {
   background-color: #6361c6;
-}
-
-.banner-3-start {
-  border-top-color: #6361c6;
 }
 </style>
