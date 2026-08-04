@@ -4,10 +4,6 @@ const props = defineProps({
     type: String,
     required: true,
   },
-  content: {
-    type: String,
-    required: true,
-  },
   colour: {
     type: String,
     required: true,
@@ -42,7 +38,7 @@ const props = defineProps({
     <div class="-mt-5 pt-10 px-5 pb-5" :class="{ 'bg-[#48438a]/80': props.colour === 'blue' }">
       <!-- Background text -->
       <div class="p-5 text-white" :class="{ 'bg-[#31409e]': props.colour === 'blue' }">
-        <p v-html="props.content"></p>
+        <slot></slot>
       </div>
     </div>
   </div>
