@@ -1,12 +1,12 @@
 <template>
+  <!-- Background card -->
   <div class="flex flex-col p-10 items-center">
-    <!-- Job-title banner -->
+    <!-- Card title banner -->
     <div class="flex relative h-10">
       <!-- Left edge -->
       <div
         class="relative border-r-20 border-t-20 border-t-transparent border-b-20 border-b-transparent border-r-[#4a67d6]"
       ></div>
-      <!-- Job-title body -->
       <div class="flex h-10 px-10 items-center overflow-hidden bg-[#4a67d6]">
         <h3 class="font-semibold italic text-white text-xl">Background</h3>
       </div>
@@ -15,7 +15,9 @@
         class="relative border-l-20 border-t-20 border-t-transparent border-b-20 border-b-transparent border-l-[#4a67d6]"
       ></div>
     </div>
+    <!-- Detail part -->
     <div class="bg-[#48438a]/80 -mt-5 pt-10 px-5 pb-5">
+      <!-- Background text -->
       <div class="bg-[#31409e] p-5 text-white">
         <p>
           Hey there! I'm Ralf, a current Computer Science student that specialises in web development, particularly front-end development.
