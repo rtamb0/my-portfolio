@@ -37,18 +37,16 @@
               class="relative z-10 flex h-24 w-[clamp(18rem,38vw,30rem)] items-center bg-[#bb40bc] pl-20 pr-5"
             >
               <!-- Job-title banner -->
-              <div class="absolute bottom-[calc(100%+0.3rem)] right-0 left-4">
-                <div
-                  class="relative h-(--mini-height) w-full [--mini-cut:2rem] [--mini-diamond-size:1.42rem] [--mini-height:2rem]"
-                >
-                  <!-- Small diamond -->
+              <div class="absolute bottom-[calc(100%+0.3rem)] right-0 left-0">
+                <div class="flex relative h-8 w-full">
+                  <!-- Left edge -->
                   <div
-                    class="absolute top-1/2 left-0 size-(--mini-diamond-size) -translate-x-1/2 -translate-y-1/2 rotate-45 bg-[#614461]"
+                    class="relative border-r-16 border-t-16 border-t-transparent border-b-16 border-b-transparent border-r-[#614461]"
                   ></div>
 
                   <!-- Job-title body -->
                   <div
-                    class="banner-mini-shape flex h-(--mini-height) w-full items-center overflow-hidden bg-[#614461] pl-4"
+                    class="banner-mini-shape flex w-full items-center overflow-hidden bg-[#614461] pl-4"
                   >
                     <h1
                       class="min-w-0 flex-1 truncate text-[clamp(0.75rem,2.2vw,1.125rem)] font-semibold italic text-white"
@@ -78,6 +76,6 @@
 
 <style scoped>
 .banner-mini-shape {
-  clip-path: polygon(0 0, calc(100% - var(--mini-cut)) 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, calc(100% - 2rem) 0, 100% 100%, 0 100%);
 }
 </style>
