@@ -18,18 +18,18 @@
     <div class="bg-[#48438a]/80 -mt-5 pt-10 px-5 pb-5">
       <div class="bg-[#31409e] p-5 text-white">
         <p>
-          I'm Ralf, a current Computer Science student who enjoys creating websites that feel clean, responsive,
-          and easy to use. I like combining design and development to build interfaces that are both
+          Hey there! I'm Ralf, a current Computer Science student that specialises in web development, particularly front-end development.
+          I enjoy creating websites that feel clean, responsive,
+          and also combining design and development to build interfaces that are both
           visually appealing and practical.
           <pre> </pre>
           Most of my experience comes from working with Vue.js and modern front-end technologies,
-          where I've developed features, integrated REST APIs, and translated designs into
+          where I've developed features, integrated REST APIs, and translated designs and requirements into
           functional web applications. I'm constantly learning, experimenting with new tools, and
           looking for ways to improve both my technical skills and the user experience of the
           products I build.
           <pre> </pre>
-          Outside of coding, I enjoy exploring UI design, studying how great products solve user
-          problems, and challenging myself with new projects that help me grow as a developer.
+          In my portfolio, you'll find a collection of my projects that showcase my skills and experience in web development.
         </p>
       </div>
     </div>
