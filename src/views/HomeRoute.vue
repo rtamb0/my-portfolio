@@ -49,9 +49,9 @@
                     class="banner-mini-shape flex w-full items-center overflow-hidden bg-[#614461] pl-4"
                   >
                     <h1
-                      class="min-w-0 flex-1 truncate text-[clamp(0.75rem,2.2vw,1.125rem)] font-semibold italic text-white"
+                      class="min-w-0 flex-1 truncate text-[clamp(0.75rem,2.2vw,1.125rem)] font-semibold text-white"
                     >
-                      Front-end Web Developer
+                      <em>Front-end Web Developer</em>
                     </h1>
                   </div>
                 </div>
