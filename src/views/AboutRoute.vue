@@ -151,6 +151,26 @@
             </ul>
           </div>
         </section>
+        <!-- Design part-->
+        <section class="section-part relative">
+          <!-- Design title banner -->
+          <div class="title-section flex h-10 relative left-5">
+            <!-- Left edge -->
+            <div class="title-left-edge border-r-[#4a67d6]"></div>
+            <div class="title-banner bg-[#4a67d6]">
+              <h3 class="font-semibold italic text-white text-xl">Design</h3>
+            </div>
+            <!-- Right edge -->
+            <div class="title-right-edge border-l-[#4a67d6]"></div>
+          </div>
+          <!-- Background text -->
+          <div class="text-white bg-[#31409e] -mt-5 p-5 pt-10">
+            <!-- Skills list -->
+            <ul class="list-disc list-inside">
+              <li>Figma</li>
+            </ul>
+          </div>
+        </section>
       </div>
     </div>
   </div>
