@@ -16,6 +16,9 @@
         looking for ways to improve both my technical skills and the user experience of the
         products I build.
         <pre> </pre>
+        Other than web development, I am also interested in UI/UX design, and I enjoy exploring the intersection of design and development to create
+        interfaces that are both visually appealing and practical.
+        <pre> </pre>
         In my portfolio, you'll find a collection of my projects that showcase my skills and experience in web development.
       </p>
     </WebsiteCard>
