@@ -1,8 +1,8 @@
 <template>
   <div class="flex flex-1 flex-col overflow-hidden">
     <!-- Introduction card -->
-    <div class="mt-15 flex h-1/4 shrink-0 items-center bg-[#40bedf]/50">
-      <div class="flex h-1/2 flex-1 items-center bg-[#2b4866] text-center">
+    <div class="mt-15 flex pt-10 pb-10 shrink-0 items-center bg-[#40bedf]/50">
+      <div class="flex flex-1 items-center bg-[#2b4866] text-center">
         <h3 class="m-10 flex-1 text-3xl text-white">Hello! My name is...</h3>
       </div>
     </div>
@@ -11,9 +11,9 @@
     <div class="relative min-h-0 flex-1">
       <div class="absolute inset-x-0 -top-12 bottom-0 z-10">
         <img
-          src="/src/assets/images/placeholder_person.png"
+          src="/src/assets/images/picture-of-me.png"
           alt=""
-          class="absolute inset-0 size-full object-contain object-bottom"
+          class="absolute inset-0 size-full scale-170 object-contain object-bottom"
         />
 
         <!-- Complete name banner -->
@@ -48,9 +48,7 @@
                   <div
                     class="banner-mini-shape flex w-full items-center overflow-hidden bg-[#614461] pl-4"
                   >
-                    <h1
-                      class="min-w-0 flex-1 truncate text-[clamp(0.75rem,2.2vw,1.125rem)] font-semibold text-white"
-                    >
+                    <h1 class="min-w-0 flex-1 truncate font-semibold text-white">
                       <em>Front-end Web Developer</em>
                     </h1>
                   </div>
@@ -58,7 +56,7 @@
               </div>
 
               <!-- Name -->
-              <h1 class="whitespace-nowrap text-2xl text-white">John Smith</h1>
+              <h1 class="text-2xl text-white">Ralf Fadilla Tambayong</h1>
             </div>
 
             <!-- Main banner arrow -->
