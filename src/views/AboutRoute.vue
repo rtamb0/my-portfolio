@@ -24,7 +24,7 @@
       <br />
       <p>
         In my portfolio, you'll find a collection of my projects that showcase my skills and
-        experience in web development.
+        experience.
       </p>
     </WebsiteCard>
   </div>
