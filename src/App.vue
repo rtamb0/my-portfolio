@@ -4,10 +4,10 @@ import Topbar from './components/TopBar.vue'
 </script>
 
 <template>
-  <div id="app-layout" class="flex flex-col h-screen w-screen">
-    <Topbar />
+  <div id="app-layout" class="min-h-screen w-full flex flex-col">
+    <Topbar class="sticky top-0 z-100" />
     <div id="app-content" class="flex flex-1">
-      <Sidebar id="sidebar" />
+      <Sidebar id="sidebar" class="sticky top-16 h-[calc(100vh-4rem)] w-64" />
       <main class="flex-1">
         <RouterView />
       </main>
