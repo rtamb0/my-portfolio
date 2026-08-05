@@ -1,5 +1,5 @@
 <template>
-  <div class="flex h-full min-h-0 flex-col overflow-hidden">
+  <div class="flex flex-1 flex-col overflow-hidden">
     <!-- Introduction card -->
     <div class="mt-15 flex h-1/4 shrink-0 items-center bg-[#40bedf]/50">
       <div class="flex h-1/2 flex-1 items-center bg-[#2b4866] text-center">
