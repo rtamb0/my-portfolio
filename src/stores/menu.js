@@ -20,7 +20,7 @@ const menus = [
     description: 'Check out some of my recent projects and contributions.',
   },
   {
-    name: 'Contact Me',
+    name: 'Contact',
     link: '/contact',
     description: 'Get in touch with me for collaborations or just to say hello!',
   },
