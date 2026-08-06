@@ -90,7 +90,7 @@ const selectProject = (project) => {
       <div class="mt-5 flex flex-col gap-3 items-center">
         <a
           v-if="selectedProject?.projectLink"
-          href="{{ selectedProject?.projectLink }}"
+          :href="selectedProject?.projectLink"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -106,7 +106,7 @@ const selectProject = (project) => {
         </a>
         <a
           v-if="selectedProject?.repositoryLink"
-          href="{{ selectedProject?.repositoryLink }}"
+          :href="selectedProject?.repositoryLink"
           target="_blank"
           rel="noopener noreferrer"
         >
