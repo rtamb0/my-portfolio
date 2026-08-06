@@ -1,4 +1,5 @@
 <script setup>
+import BottomBar from './components/BottomBar.vue'
 import Sidebar from './components/SideBar.vue'
 import Topbar from './components/TopBar.vue'
 </script>
@@ -12,10 +13,17 @@ import Topbar from './components/TopBar.vue'
         <RouterView />
       </main>
     </div>
+    <BottomBar class="sticky bottom-0 z-100" />
   </div>
 </template>
 
 <style scoped>
+/* Shared layout sizes for the sticky bars */
+#app-layout {
+  --topbar-height: 4rem;
+  --bottombar-height: 2rem;
+}
+
 /* Mobile Devices (Smartphones up to 480px wide) */
 @media screen and (max-width: 768px) {
   #app-content {
@@ -32,8 +40,8 @@ import Topbar from './components/TopBar.vue'
 /* Laptops and Desktops (Widths 769px and above) */
 @media screen and (min-width: 769px) {
   #sidebar {
-    top: 4rem;
-    height: calc(100vh - 4rem);
+    top: var(--topbar-height);
+    height: calc(100dvh - var(--topbar-height) - var(--bottombar-height));
     width: 8rem;
   }
 }
