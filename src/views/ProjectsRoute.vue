@@ -88,7 +88,12 @@ const selectProject = (project) => {
         </p>
       </div>
       <div class="mt-5 flex flex-col gap-3 items-center">
-        <a href="{{ selectedProject?.projectLink }}" target="_blank" rel="noopener noreferrer">
+        <a
+          v-if="selectedProject?.projectLink"
+          href="{{ selectedProject?.projectLink }}"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <button class="flex h-10 relative hover:scale-105 transition">
             <!-- Left edge -->
             <div class="button-left-edge border-r-[#4a67d6]"></div>
@@ -99,7 +104,12 @@ const selectProject = (project) => {
             <div class="button-right-edge border-l-[#4a67d6]"></div>
           </button>
         </a>
-        <a href="{{ selectedProject?.repositoryLink }}" target="_blank" rel="noopener noreferrer">
+        <a
+          v-if="selectedProject?.repositoryLink"
+          href="{{ selectedProject?.repositoryLink }}"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <button class="flex h-10 relative hover:scale-105 transition">
             <!-- Left edge -->
             <div class="button-left-edge border-r-[#4a67d6]"></div>
