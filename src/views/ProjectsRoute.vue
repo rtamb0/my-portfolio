@@ -1,18 +1,20 @@
 <script setup>
-import reactLogo from '@/assets/images/react-icon.svg'
 import vueLogo from '@/assets/images/vue-js-icon.svg'
 import javascriptLogo from '@/assets/images/JavaScript-logo.png'
+import shariaProjectImage from '@/assets/images/sharia-project.png'
 import { computed, ref } from 'vue'
 
 const projects = ref([
   {
-    name: 'Project 1',
-    type: 'React.JS',
+    name: 'Sharia Project',
+    type: 'Figma',
     description:
-      'A web application built with React.JS that allows users to track their tasks and manage their time effectively.',
-    projectLink: '',
+      'A UI/UX design project created using Figma for a university project, showcasing a modern and user-friendly interface for a mobile event finder application for islamic studies.',
+    projectLink:
+      'https://www.figma.com/design/sig9XvJsVsZ4WakDbs3zQl/Sharia-project--Copy-?node-id=0-1&t=5gWJ94IDpxOBXJaS-1',
     repositoryLink: '',
-    logo: reactLogo,
+    logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg',
+    image: shariaProjectImage,
     selected: true,
   },
   {
@@ -23,6 +25,7 @@ const projects = ref([
     projectLink: '',
     repositoryLink: '',
     logo: vueLogo,
+    image: '',
     selected: false,
   },
   {
@@ -33,6 +36,7 @@ const projects = ref([
     projectLink: '',
     repositoryLink: '',
     logo: javascriptLogo,
+    image: '',
     selected: false,
   },
 ])
