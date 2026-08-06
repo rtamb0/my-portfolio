@@ -1,6 +1,6 @@
 <script setup>
 import { useMenuStore } from '@/stores/menu'
-import { HomeIcon } from '@heroicons/vue/24/outline'
+import { HomeIcon, PhoneIcon, StarIcon, UserIcon } from '@heroicons/vue/24/outline'
 import { computed, nextTick, onMounted, ref, watch } from 'vue'
 
 const menuStore = useMenuStore()
@@ -54,7 +54,10 @@ onMounted(() => {
   <div class="flex h-16 w-full">
     <!-- First section  -->
     <div class="banner-1 relative z-30 flex basis-[9%] shrink-0 items-center justify-center">
-      <HomeIcon class="h-8 w-8 text-white" />
+      <HomeIcon v-if="currentMenu?.name === 'Home'" class="h-8 w-8 text-white" />
+      <UserIcon v-else-if="currentMenu?.name === 'About'" class="h-8 w-8 text-white" />
+      <StarIcon v-else-if="currentMenu?.name === 'Projects'" class="h-8 w-8 text-white" />
+      <PhoneIcon v-else-if="currentMenu?.name === 'Contact'" class="h-8 w-8 text-white" />
     </div>
 
     <!-- Transition from banner 1 to banner 2 -->
