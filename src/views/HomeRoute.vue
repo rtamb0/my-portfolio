@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-1 flex-col overflow-hidden">
     <!-- Introduction card -->
-    <div class="mt-15 flex pt-10 pb-10 shrink-0 items-center bg-[#40bedf]/50">
+    <div class="mt-15 flex pt-10 pb-10 shrink-0 items-center bg-[#4f9ccf]/80">
       <div class="flex flex-1 items-center bg-[#2b4866] text-center">
         <h3 class="m-10 flex-1 text-3xl text-white">Hello! My name is...</h3>
       </div>
