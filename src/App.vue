@@ -10,7 +10,11 @@ import Topbar from './components/TopBar.vue'
     <div id="app-content" class="flex flex-1">
       <Sidebar id="sidebar" class="sticky z-100" />
       <main class="flex-1 flex flex-col">
-        <RouterView />
+        <router-view v-slot="{ Component }">
+          <transition name="slide-fade">
+            <component :is="Component" />
+          </transition>
+        </router-view>
       </main>
     </div>
     <BottomBar class="sticky bottom-0 z-100" />
@@ -44,5 +48,15 @@ import Topbar from './components/TopBar.vue'
     height: calc(100dvh - var(--topbar-height) - var(--bottombar-height));
     width: 8rem;
   }
+}
+
+/* Transition for route changes */
+.slide-fade-enter-active {
+  transition: all 0.3s ease-out;
+}
+
+.slide-fade-enter-from {
+  transform: translateX(20px);
+  opacity: 0;
 }
 </style>
