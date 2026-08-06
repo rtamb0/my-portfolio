@@ -86,6 +86,12 @@ const selectProject = (project) => {
         <p class="text-gray-600">
           {{ selectedProject?.description }}
         </p>
+        <img
+          v-if="selectedProject?.image"
+          :src="selectedProject?.image"
+          :alt="selectedProject?.name"
+          class="mt-4 w-full h-auto rounded-lg"
+        />
       </div>
       <div class="mt-5 flex flex-col gap-3 items-center">
         <a
