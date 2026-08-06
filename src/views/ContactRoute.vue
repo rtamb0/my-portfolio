@@ -121,6 +121,19 @@ const submitForm = async () => {
     })
   }
 }
+
+const socials = ref([
+  {
+    name: 'GitHub',
+    url: 'https://github.com/rtamb0',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg',
+  },
+  {
+    name: 'LinkedIn',
+    url: 'https://linkedin.com/in/rtamb0',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg',
+  },
+])
 </script>
 
 <template>
@@ -226,6 +239,41 @@ const submitForm = async () => {
         </div>
       </div>
     </div>
+    <!-- Socials card -->
+    <div class="flex flex-col items-center">
+      <!-- Card title banner -->
+      <div class="flex relative h-10">
+        <!-- Left edge -->
+        <div class="title-left-edge border-r-[#34b1d0]"></div>
+        <div class="title-banner bg-[#34b1d0]">
+          <h3 class="font-semibold italic text-white text-xl">Socials</h3>
+        </div>
+        <!-- Right edge -->
+        <div class="title-right-edge border-l-[#34b1d0]"></div>
+      </div>
+      <!-- Detail part -->
+      <div class="card-inner bg-[#4f9ccf]/80">
+        <!-- Background text -->
+        <div class="text-white p-5 pt-10 pb-10 bg-[#214566]">
+          <div class="flex flex-wrap justify-center gap-10">
+            <a
+              v-for="social in socials"
+              :key="social.name"
+              :href="social.url"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="button bg-white h-16 w-16 rotate-45 button-border border-8 transition hover:scale-105 border-[#4f9ccf] overflow-hidden"
+            >
+              <img
+                :src="social.icon"
+                :alt="social.name"
+                class="w-full h-full object-contain -rotate-45"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -262,5 +310,10 @@ const submitForm = async () => {
   padding-right: 1.25rem;
   padding-bottom: 1.25rem;
   width: 100%;
+}
+
+.button {
+  -webkit-box-shadow: 5px 5px 15px -5px #000000;
+  box-shadow: 5px 5px 15px -5px #000000;
 }
 </style>
