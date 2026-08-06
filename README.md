@@ -6,5 +6,5 @@ This portfolio is heavily themed around one of my favourite games of all time, X
 
 # Credits
 
-Screaming Brain Studios - Background
+Screaming Brain Studios - Background\
 Nintendo and Monolith Soft - Theme
