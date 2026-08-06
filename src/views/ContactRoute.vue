@@ -154,10 +154,11 @@ const submitForm = async () => {
                   type="text"
                   id="name"
                   name="name"
+                  placeholder="Your Name"
                   v-model="formInputs.name"
                   @blur="validateInput('name')"
                   @input="validateInput('name')"
-                  class="w-full p-2 rounded bg-white text-black transition focus:outline-none focus:ring-2 focus:ring-[#34b1d0]"
+                  class="placeholder:pl-1 w-full p-2 rounded bg-white text-black transition focus:outline-none focus:ring-2 focus:ring-[#34b1d0]"
                   required
                 />
               </li>
@@ -172,10 +173,11 @@ const submitForm = async () => {
                   type="email"
                   id="email"
                   name="email"
+                  placeholder="Your Email"
                   v-model="formInputs.email"
                   @blur="validateInput('email')"
                   @input="validateInput('email')"
-                  class="w-full p-2 rounded bg-white text-black transition focus:outline-none focus:ring-2 focus:ring-[#34b1d0]"
+                  class="placeholder:pl-1 w-full p-2 rounded bg-white text-black transition focus:outline-none focus:ring-2 focus:ring-[#34b1d0]"
                   required
                 />
               </li>
@@ -187,8 +189,9 @@ const submitForm = async () => {
                   type="text"
                   id="subject"
                   name="subject"
+                  placeholder="Subject"
                   v-model="formInputs.subject"
-                  class="w-full p-2 rounded bg-white text-black transition focus:outline-none focus:ring-2 focus:ring-[#34b1d0]"
+                  class="placeholder:pl-1 w-full p-2 rounded bg-white text-black transition focus:outline-none focus:ring-2 focus:ring-[#34b1d0]"
                 />
               </li>
               <li>
@@ -202,7 +205,8 @@ const submitForm = async () => {
                   id="message"
                   name="message"
                   rows="8"
-                  class="w-full p-2 rounded bg-white text-black transition focus:outline-none focus:ring-2 focus:ring-[#34b1d0]"
+                  placeholder="Your Message"
+                  class="placeholder:pl-1 w-full p-2 rounded bg-white text-black transition focus:outline-none focus:ring-2 focus:ring-[#34b1d0]"
                   required
                   @blur="validateInput('message')"
                   @input="validateInput('message')"
