@@ -1,7 +1,7 @@
 <script setup>
-import vueLogo from '@/assets/images/vue-js-icon.svg'
 import javascriptLogo from '@/assets/images/JavaScript-logo.png'
 import shariaProjectImage from '@/assets/images/sharia-project.png'
+import miniAcademicManagementSystemImage from '@/assets/images/mini-academic-management-system.png'
 import { computed, ref } from 'vue'
 
 const projects = ref([
@@ -18,14 +18,14 @@ const projects = ref([
     selected: true,
   },
   {
-    name: 'Project 2',
-    type: 'Vue.JS',
+    name: 'Mini Academic Management System',
+    type: 'Next.JS + Express + MySQL',
     description:
-      'A web application built with Vue.JS that provides a modern user interface for managing projects and tasks.',
-    projectLink: '',
-    repositoryLink: '',
-    logo: vueLogo,
-    image: '',
+      'A web application built with Next.js, Express, and MySQL that allows users to manage students, courses, and users. This application was created as a university project to demonstrate the ability to build a mini full-stack SPA (Single Page Application) application. The application is deployed with Docker on my VPS server, and can be accessed below. For login credentials, check the repository.',
+    projectLink: 'http://192.236.157.35/sistem-akademik-mini/',
+    repositoryLink: 'https://github.com/rtamb0/sistem-akademik-mini',
+    logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg',
+    image: miniAcademicManagementSystemImage,
     selected: false,
   },
   {
