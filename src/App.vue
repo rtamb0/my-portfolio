@@ -5,10 +5,10 @@ import Topbar from './components/TopBar.vue'
 </script>
 
 <template>
-  <div id="app-layout" class="min-h-screen w-full flex flex-col">
-    <Topbar class="sticky top-0 z-100" />
+  <div id="app-layout" class="min-h-screen w-full flex gap-10 md:gap-0 flex-col">
+    <Topbar class="md:sticky top-0 z-100" />
     <div id="app-content" class="flex flex-1">
-      <Sidebar id="sidebar" class="sticky z-100" />
+      <Sidebar id="sidebar" class="md:sticky z-100" />
       <main class="flex-1 flex flex-col">
         <router-view v-slot="{ Component }">
           <transition name="slide-fade">
@@ -17,7 +17,7 @@ import Topbar from './components/TopBar.vue'
         </router-view>
       </main>
     </div>
-    <BottomBar class="sticky bottom-0 z-100" />
+    <BottomBar class="md:sticky bottom-0 z-100" />
   </div>
 </template>
 
@@ -37,7 +37,6 @@ import Topbar from './components/TopBar.vue'
 
   #sidebar {
     width: 100%;
-    top: 4rem;
   }
 }
 
