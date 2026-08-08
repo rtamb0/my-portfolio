@@ -50,9 +50,9 @@ const selectProject = (project) => {
 </script>
 
 <template>
-  <div class="p-10 grid grid-cols-3 gap-10 flex-1">
+  <div class="p-10 flex flex-col md:grid md:grid-cols-2 xl:grid-cols-3 gap-10 flex-1">
     <!-- Portfolio list part -->
-    <div class="p-5 col-span-2 bg-[#883888]/80">
+    <div class="p-5 md:col-span-1 xl:col-span-2 bg-[#883888]/80">
       <div class="flex justify-between ml-20 mr-5">
         <h5 class="text-white mb-4"><em>Project Name</em></h5>
         <h5 class="text-white mb-4"><em>Type</em></h5>
@@ -61,7 +61,7 @@ const selectProject = (project) => {
         <li
           v-for="project in projects"
           :key="project.name"
-          class="hover:scale-102 transition flex items-center"
+          class="hover:scale-102 transition flex flex-wrap items-center"
           @click="selectProject(project)"
         >
           <div
@@ -84,7 +84,7 @@ const selectProject = (project) => {
       </ul>
     </div>
     <!-- Personal details part -->
-    <div class="p-5 flex flex-col justify-between col-span-1 bg-[#ffffff]/80">
+    <div class="p-5 flex flex-col justify-between md:col-span-1 bg-[#ffffff]/80">
       <div>
         <h2 class="text-xl font-bold text-gray-800 mb-4">{{ selectedProject?.name }}</h2>
         <p class="text-gray-600">
