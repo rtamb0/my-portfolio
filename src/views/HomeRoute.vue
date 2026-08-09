@@ -9,11 +9,11 @@
 
     <!-- Character area -->
     <div class="relative min-h-0 flex-1">
-      <div class="absolute inset-x-0 -top-12 bottom-0 z-10">
+      <div class="relative md:absolute inset-x-0 -top-12 bottom-0 z-10">
         <img
           src="/src/assets/images/picture-of-me.png"
           alt=""
-          class="absolute inset-0 size-full scale-170 object-contain object-bottom"
+          class="relative md:absolute inset-0 size-full scale-170 object-contain object-bottom"
         />
 
         <!-- Complete name banner -->
