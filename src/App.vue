@@ -5,10 +5,13 @@ import Topbar from './components/TopBar.vue'
 </script>
 
 <template>
-  <div id="app-layout" class="min-h-screen w-full flex gap-10 md:gap-0 flex-col">
+  <div id="app-layout" class="min-h-screen w-full flex flex-col">
     <Topbar class="md:sticky top-0 z-100" />
-    <div id="app-content" class="flex flex-1">
-      <Sidebar id="sidebar" class="md:sticky z-100" />
+    <div id="app-content" class="flex flex-col w-full md:flex-row flex-1 mt-10 md:mt-0">
+      <Sidebar
+        id="sidebar"
+        class="w-full md:h-[calc(100dvh-4rem-2rem)] md:w-32 md:sticky md:top-16 z-100"
+      />
       <main class="flex-1 flex flex-col">
         <router-view v-slot="{ Component }">
           <transition name="slide-fade">
@@ -22,33 +25,6 @@ import Topbar from './components/TopBar.vue'
 </template>
 
 <style scoped>
-/* Shared layout sizes for the sticky bars */
-#app-layout {
-  --topbar-height: 4rem;
-  --bottombar-height: 2rem;
-}
-
-/* Mobile Devices (Smartphones up to 480px wide) */
-@media screen and (max-width: 768px) {
-  #app-content {
-    flex-direction: column;
-    max-width: 100%;
-  }
-
-  #sidebar {
-    width: 100%;
-  }
-}
-
-/* Laptops and Desktops (Widths 769px and above) */
-@media screen and (min-width: 769px) {
-  #sidebar {
-    top: var(--topbar-height);
-    height: calc(100dvh - var(--topbar-height) - var(--bottombar-height));
-    width: 8rem;
-  }
-}
-
 /* Transition for route changes */
 .slide-fade-enter-active {
   transition: all 0.3s ease-out;
