@@ -89,7 +89,7 @@ const selectProject = (project) => {
   <div class="p-10 flex flex-col md:grid md:grid-cols-2 xl:grid-cols-3 gap-10 flex-1">
     <!-- Portfolio list part -->
     <div class="p-5 md:col-span-1 xl:col-span-2 bg-[#883888]/80">
-      <div class="flex justify-between ml-20 mr-5">
+      <div class="flex justify-between mx-5 md:ml-20 md:mr-5">
         <h5 class="text-white mb-4"><em>Project Name</em></h5>
         <h5 class="text-white mb-4"><em>Type</em></h5>
       </div>
@@ -97,11 +97,11 @@ const selectProject = (project) => {
         <li
           v-for="project in projects"
           :key="project.name"
-          class="hover:scale-102 transition flex flex-wrap items-center"
+          class="hover:scale-102 flex-col md:flex-row transition flex md:flex-wrap md:items-center"
           @click="selectProject(project)"
         >
           <div
-            class="size-16 flex items-center justify-center outline-5 rounded-lg bg-[#fdfdfd] transition"
+            class="size-16 flex items-center justify-center self-center md:self-auto outline-5 rounded-lg bg-[#fdfdfd] transition"
             :class="{
               'outline-[#da50da]': project.selected,
               'outline-[#b33ab3]': !project.selected,
