@@ -1,10 +1,68 @@
 <script setup>
-import javascriptLogo from '@/assets/images/JavaScript-logo.png'
 import shariaProjectImage from '@/assets/images/sharia-project.png'
 import miniAcademicManagementSystemImage from '@/assets/images/mini-academic-management-system.png'
+import restaurantPageImage from '@/assets/images/restaurant-page.png'
+import etchASketchImage from '@/assets/images/etch-a-sketch.png'
+import todoListImage from '@/assets/images/to-do-list.png'
+import signupFormImage from '@/assets/images/sign-up-form.png'
 import { computed, ref } from 'vue'
 
 const projects = ref([
+  {
+    name: 'Mini Academic Management System',
+    type: 'Next.JS + Express + MySQL',
+    description:
+      'A web application built with Next.js, Express, and MySQL that allows users to manage students, courses, and users. This application was created as a university project to demonstrate the ability to build a mini full-stack SPA (Single Page Application) application. The application is deployed with Docker on my VPS server, and can be accessed below. For login credentials, check the repository.',
+    projectLink: 'http://192.236.157.35/sistem-akademik-mini/',
+    repositoryLink: 'https://github.com/rtamb0/sistem-akademik-mini',
+    logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg',
+    image: miniAcademicManagementSystemImage,
+    selected: true,
+  },
+  {
+    name: 'Restaurant Page',
+    type: 'JavaScript (Vanilla)',
+    description:
+      'A personal project built as part of The Odin Project curriculum, featuring a single-page restaurant website developed with vanilla JavaScript, HTML, CSS, and Webpack.',
+    projectLink: 'https://rtamb0.github.io/restaurant-page/',
+    repositoryLink: 'https://github.com/rtamb0/restaurant-page',
+    logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
+    image: restaurantPageImage,
+    selected: false,
+  },
+  {
+    name: 'Etch-a-Sketch',
+    type: 'JavaScript (Vanilla)',
+    description:
+      'A personal project built as part of The Odin Project curriculum, showcasing an Etch-a-Sketch application that demonstrates my DOM manipulation skills with vanilla JavaScript.',
+    projectLink: 'https://rtamb0.github.io/odin-etch-a-sketch/',
+    repositoryLink: 'https://github.com/rtamb0/odin-etch-a-sketch',
+    logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
+    image: etchASketchImage,
+    selected: false,
+  },
+  {
+    name: 'To-do List',
+    type: 'JavaScript (Vanilla)',
+    description:
+      'A personal project built as part of The Odin Project curriculum, featuring a To-do List application that demonstrates my object-oriented programming skills with vanilla JavaScript.',
+    projectLink: 'https://rtamb0.github.io/todo-list/',
+    repositoryLink: 'https://github.com/rtamb0/todo-list',
+    logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
+    image: todoListImage,
+    selected: false,
+  },
+  {
+    name: 'Sign-up Form',
+    type: 'HTML + CSS',
+    description:
+      'A personal project built as part of The Odin Project curriculum, featuring a sign-up form application that demonstrates my HTML form handling skills + CSS styling for it.',
+    projectLink: 'https://rtamb0.github.io/sign-up-form/',
+    repositoryLink: 'https://github.com/rtamb0/sign-up-form',
+    logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg',
+    image: signupFormImage,
+    selected: false,
+  },
   {
     name: 'Sharia Project',
     type: 'Figma',
@@ -15,28 +73,6 @@ const projects = ref([
     repositoryLink: '',
     logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg',
     image: shariaProjectImage,
-    selected: true,
-  },
-  {
-    name: 'Mini Academic Management System',
-    type: 'Next.JS + Express + MySQL',
-    description:
-      'A web application built with Next.js, Express, and MySQL that allows users to manage students, courses, and users. This application was created as a university project to demonstrate the ability to build a mini full-stack SPA (Single Page Application) application. The application is deployed with Docker on my VPS server, and can be accessed below. For login credentials, check the repository.',
-    projectLink: 'http://192.236.157.35/sistem-akademik-mini/',
-    repositoryLink: 'https://github.com/rtamb0/sistem-akademik-mini',
-    logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg',
-    image: miniAcademicManagementSystemImage,
-    selected: false,
-  },
-  {
-    name: 'Project 3',
-    type: 'JavaScript',
-    description:
-      'A web application built with JavaScript that allows users to collaborate on projects and share files securely.',
-    projectLink: '',
-    repositoryLink: '',
-    logo: javascriptLogo,
-    image: '',
     selected: false,
   },
 ])
