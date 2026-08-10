@@ -12,7 +12,7 @@ import Topbar from './components/TopBar.vue'
         id="sidebar"
         class="w-full md:h-[calc(100dvh-4rem-2rem)] md:w-32 md:sticky md:top-16 z-100"
       />
-      <main class="flex-1 flex flex-col">
+      <main class="flex-1 flex flex-col overflow-hidden">
         <router-view v-slot="{ Component }">
           <transition name="slide-fade">
             <component :is="Component" />
