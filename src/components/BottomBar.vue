@@ -4,9 +4,7 @@
       <p class="text-sm">&copy; 2026 Ralf Fadilla Tambayong. All rights reserved.</p>
       <p class="text-sm ml-4">
         Want to download my Resume/CV?
-        <a href="https://bit.ly/3TMiJ6S" target="_blank" rel="noopener noreferrer" class="underline"
-          >Click here</a
-        >
+        <a href="https://bit.ly/3TMiJ6S" class="underline">Click here</a>
       </p>
     </div>
   </div>
